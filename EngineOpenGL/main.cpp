@@ -1,8 +1,8 @@
-#include <iostream>
+#include "Logger.hpp"
 
 int main()
 {
-    std::cout << "Hello, World!\n";
+    Logger::GetInstance()->Log("Hello World!", LOG_INFO);
     
     return 0;
 }

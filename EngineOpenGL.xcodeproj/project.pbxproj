@@ -11,6 +11,7 @@
 		AF2F9DA91E4B7E0600B59EDE /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2F9DA81E4B7E0600B59EDE /* OpenGL.framework */; };
 		AF2F9DAB1E4B7E7100B59EDE /* libGLEW.1.13.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2F9DAA1E4B7E7100B59EDE /* libGLEW.1.13.0.dylib */; };
 		AF2F9DAD1E4B7E8900B59EDE /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2F9DAC1E4B7E8900B59EDE /* libglfw.3.2.dylib */; };
+		AF2F9DB61E4BA66500B59EDE /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF2F9DB41E4BA66500B59EDE /* Logger.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		AF2F9DA81E4B7E0600B59EDE /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		AF2F9DAA1E4B7E7100B59EDE /* libGLEW.1.13.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.1.13.0.dylib; path = ../../../../../usr/local/Cellar/glew/1.13.0/lib/libGLEW.1.13.0.dylib; sourceTree = "<group>"; };
 		AF2F9DAC1E4B7E8900B59EDE /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
+		AF2F9DB41E4BA66500B59EDE /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Logger.cpp; sourceTree = "<group>"; };
+		AF2F9DB51E4BA66500B59EDE /* Logger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Logger.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				AF2F9DA01E4B7C0100B59EDE /* main.cpp */,
+				AF2F9DB41E4BA66500B59EDE /* Logger.cpp */,
+				AF2F9DB51E4BA66500B59EDE /* Logger.hpp */,
 			);
 			path = EngineOpenGL;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF2F9DA11E4B7C0100B59EDE /* main.cpp in Sources */,
+				AF2F9DB61E4BA66500B59EDE /* Logger.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +242,7 @@
 		AF2F9DA51E4B7C0100B59EDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				HEADER_SEARCH_PATHS = /usr/local/include/;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -249,6 +256,7 @@
 		AF2F9DA61E4B7C0100B59EDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				HEADER_SEARCH_PATHS = /usr/local/include/;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
