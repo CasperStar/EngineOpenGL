@@ -42,7 +42,10 @@ void Logger::Log(const std::string& arg_message, LOG_TYPE arg_messageType)
     
     // Place message in logfile
     m_logFileStream.open(m_fileName, std::ofstream::app);
+    
     m_logFileStream << GetDate() + " " + GetTime() + l_messageType + arg_message << std::endl;
+    std::cout << GetDate() + " " + GetTime() + l_messageType + arg_message << std::endl;
+    
     m_logFileStream.close();
 }
 

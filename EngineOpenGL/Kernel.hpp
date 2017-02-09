@@ -3,6 +3,9 @@
 
 #include "Logger.hpp"
 
+#include "WindowManager.hpp"
+#include "Window.hpp"
+
 class Kernel
 {
 public:
@@ -12,8 +15,8 @@ public:
     void RunMainLoop();
     
 private:
-    // WindowManager* m_pWindowManager
-    // Renderer*    m_pRenderer
+    WindowManager* m_pWindowManager;
+    // Renderer*    m_pRenderer;
     
 };
 

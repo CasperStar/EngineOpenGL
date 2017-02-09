@@ -12,6 +12,9 @@
 		AF2F9DAB1E4B7E7100B59EDE /* libGLEW.1.13.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2F9DAA1E4B7E7100B59EDE /* libGLEW.1.13.0.dylib */; };
 		AF2F9DAD1E4B7E8900B59EDE /* libglfw.3.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2F9DAC1E4B7E8900B59EDE /* libglfw.3.2.dylib */; };
 		AF2F9DB61E4BA66500B59EDE /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF2F9DB41E4BA66500B59EDE /* Logger.cpp */; };
+		AF2F9DC21E4CAEB800B59EDE /* Kernel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF2F9DC01E4CAEB800B59EDE /* Kernel.cpp */; };
+		AF2F9DC81E4CBB4200B59EDE /* WindowManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF2F9DC61E4CBB4200B59EDE /* WindowManager.cpp */; };
+		AF2F9DCB1E4CBBB100B59EDE /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF2F9DC91E4CBBB100B59EDE /* Window.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +37,12 @@
 		AF2F9DAC1E4B7E8900B59EDE /* libglfw.3.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.2.dylib; path = ../../../../../usr/local/Cellar/glfw/3.2.1/lib/libglfw.3.2.dylib; sourceTree = "<group>"; };
 		AF2F9DB41E4BA66500B59EDE /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Logger.cpp; sourceTree = "<group>"; };
 		AF2F9DB51E4BA66500B59EDE /* Logger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Logger.hpp; sourceTree = "<group>"; };
+		AF2F9DC01E4CAEB800B59EDE /* Kernel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Kernel.cpp; sourceTree = "<group>"; };
+		AF2F9DC11E4CAEB800B59EDE /* Kernel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Kernel.hpp; sourceTree = "<group>"; };
+		AF2F9DC61E4CBB4200B59EDE /* WindowManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WindowManager.cpp; sourceTree = "<group>"; };
+		AF2F9DC71E4CBB4200B59EDE /* WindowManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WindowManager.hpp; sourceTree = "<group>"; };
+		AF2F9DC91E4CBBB100B59EDE /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
+		AF2F9DCA1E4CBBB100B59EDE /* Window.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +80,11 @@
 			isa = PBXGroup;
 			children = (
 				AF2F9DA01E4B7C0100B59EDE /* main.cpp */,
+				AF2F9DC51E4CBAC000B59EDE /* Window */,
 				AF2F9DB41E4BA66500B59EDE /* Logger.cpp */,
 				AF2F9DB51E4BA66500B59EDE /* Logger.hpp */,
+				AF2F9DC01E4CAEB800B59EDE /* Kernel.cpp */,
+				AF2F9DC11E4CAEB800B59EDE /* Kernel.hpp */,
 			);
 			path = EngineOpenGL;
 			sourceTree = "<group>";
@@ -85,6 +97,17 @@
 				AF2F9DA81E4B7E0600B59EDE /* OpenGL.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF2F9DC51E4CBAC000B59EDE /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F9DC61E4CBB4200B59EDE /* WindowManager.cpp */,
+				AF2F9DC71E4CBB4200B59EDE /* WindowManager.hpp */,
+				AF2F9DC91E4CBBB100B59EDE /* Window.cpp */,
+				AF2F9DCA1E4CBBB100B59EDE /* Window.hpp */,
+			);
+			name = Window;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF2F9DA11E4B7C0100B59EDE /* main.cpp in Sources */,
+				AF2F9DCB1E4CBBB100B59EDE /* Window.cpp in Sources */,
+				AF2F9DC81E4CBB4200B59EDE /* WindowManager.cpp in Sources */,
+				AF2F9DC21E4CAEB800B59EDE /* Kernel.cpp in Sources */,
 				AF2F9DB61E4BA66500B59EDE /* Logger.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
