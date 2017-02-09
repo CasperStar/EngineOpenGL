@@ -9,7 +9,6 @@ public:
     Kernel();
     ~Kernel();
     
-    void Init();
     void RunMainLoop();
     
 private:
