@@ -24,6 +24,8 @@ WindowManager::~WindowManager()
     }
     
     m_windowMap.clear();
+    
+    glfwTerminate();
 }
 
 Window* WindowManager::CreateWindow(unsigned int arg_windowNumber)
