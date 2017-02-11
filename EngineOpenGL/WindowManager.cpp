@@ -7,7 +7,12 @@ WindowManager::WindowManager()
         Logger::GetInstance()->Log("GLFW Init Failed", LOG_ERROR);
         glfwTerminate();
     }
-        
+    
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+    
     int major, minor, revision;
     glfwGetVersion(&major, &minor, &revision);
     Logger::GetInstance()->Log("GLFW Version: " + std::to_string(major) + "." + std::to_string(minor) + "." + std::to_string(revision), LOG_INFO);

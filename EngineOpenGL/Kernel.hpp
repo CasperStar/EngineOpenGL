@@ -3,8 +3,10 @@
 
 #include "Logger.hpp"
 
+#include "Renderer.hpp"
 #include "WindowManager.hpp"
 #include "Window.hpp"
+#include "ShaderManager.hpp"
 
 class Kernel
 {
@@ -16,7 +18,7 @@ public:
     
 private:
     WindowManager* m_pWindowManager;
-    // Renderer*    m_pRenderer;
+    Renderer*   m_pRenderer;
     
 };
 
