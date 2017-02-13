@@ -13,7 +13,6 @@ Renderer::Renderer()
     stringStream << "Renderer: OpenGL Version: " << glGetString(GL_VERSION);
     Logger::GetInstance()->Log(stringStream.str(), LOG_INFO);
 
-    
     // Create ShaderManager
     m_pShaderManager = new ShaderManager();
 

@@ -8,6 +8,12 @@
 #include "Window.hpp"
 #include "ShaderManager.hpp"
 
+struct Matrix4f
+{
+    float m[4][4];
+};
+
+
 class Kernel
 {
 public:
