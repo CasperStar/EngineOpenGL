@@ -24,27 +24,6 @@ Renderer::~Renderer()
     delete m_pShaderManager;
 }
 
-void Renderer::CreateBuffer(BufferType arg_bufferType)
-{
-    GLuint l_buffer;
-    glGenBuffers(1, &l_buffer);
-    
-    switch (arg_bufferType) {
-        case VERTEXBUFFER:
-            glBindBuffer(GL_VERTEX_ARRAY, l_buffer);
-            break;
-            
-        case INDEXBUFFER:
-            glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, l_buffer);
-            break;
-        default:
-            glDeleteBuffers(1, &l_buffer);
-            Logger::GetInstance()->Log("Renderer: Failed to create buffer", LOG_WARN);
-            return;
-    }
-    
-    m_bufferVector.push_back(l_buffer);
-}
 
 ShaderManager* Renderer::GetShaderManager()
 {

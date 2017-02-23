@@ -15,11 +15,12 @@
 		AF2F9DC21E4CAEB800B59EDE /* Kernel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF2F9DC01E4CAEB800B59EDE /* Kernel.cpp */; };
 		AF2F9DC81E4CBB4200B59EDE /* WindowManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF2F9DC61E4CBB4200B59EDE /* WindowManager.cpp */; };
 		AF2F9DCB1E4CBBB100B59EDE /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF2F9DC91E4CBBB100B59EDE /* Window.cpp */; };
-		AF2F9DCE1E4CDC6700B59EDE /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF2F9DCC1E4CDC6700B59EDE /* Renderer.cpp */; };
 		AF2F9DD21E4E0B3600B59EDE /* ShaderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF2F9DD01E4E0B3600B59EDE /* ShaderManager.cpp */; };
 		AF2F9DD51E4E0EC300B59EDE /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF2F9DD31E4E0EC300B59EDE /* Shader.cpp */; };
 		AF2F9DDA1E4E2FCD00B59EDE /* vertexshader.vs in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF2F9DD81E4E2E8C00B59EDE /* vertexshader.vs */; };
 		AF2F9DDB1E4E2FCD00B59EDE /* fragmentshader.fs in CopyFiles */ = {isa = PBXBuildFile; fileRef = AF2F9DD91E4E2EB100B59EDE /* fragmentshader.fs */; };
+		AF2F9DF21E5DD45500B59EDE /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF2F9DF01E5DD45500B59EDE /* Renderer.cpp */; };
+		AF2F9DF51E5F13D000B59EDE /* Pipeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF2F9DF31E5F13D000B59EDE /* Pipeline.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,14 +51,16 @@
 		AF2F9DC71E4CBB4200B59EDE /* WindowManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WindowManager.hpp; sourceTree = "<group>"; };
 		AF2F9DC91E4CBBB100B59EDE /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
 		AF2F9DCA1E4CBBB100B59EDE /* Window.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
-		AF2F9DCC1E4CDC6700B59EDE /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
-		AF2F9DCD1E4CDC6700B59EDE /* Renderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
 		AF2F9DD01E4E0B3600B59EDE /* ShaderManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderManager.cpp; sourceTree = "<group>"; };
 		AF2F9DD11E4E0B3600B59EDE /* ShaderManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ShaderManager.hpp; sourceTree = "<group>"; };
 		AF2F9DD31E4E0EC300B59EDE /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
 		AF2F9DD41E4E0EC300B59EDE /* Shader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
 		AF2F9DD81E4E2E8C00B59EDE /* vertexshader.vs */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; path = vertexshader.vs; sourceTree = "<group>"; };
 		AF2F9DD91E4E2EB100B59EDE /* fragmentshader.fs */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; path = fragmentshader.fs; sourceTree = "<group>"; };
+		AF2F9DF01E5DD45500B59EDE /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
+		AF2F9DF11E5DD45500B59EDE /* Renderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
+		AF2F9DF31E5F13D000B59EDE /* Pipeline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pipeline.cpp; sourceTree = "<group>"; };
+		AF2F9DF41E5F13D000B59EDE /* Pipeline.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Pipeline.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 		AF2F9D9F1E4B7C0100B59EDE /* EngineOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				AF2F9DF01E5DD45500B59EDE /* Renderer.cpp */,
+				AF2F9DF11E5DD45500B59EDE /* Renderer.hpp */,
 				AF2F9DA01E4B7C0100B59EDE /* main.cpp */,
 				AF2F9DC51E4CBAC000B59EDE /* Window */,
 				AF2F9DCF1E4E0AE300B59EDE /* Shader */,
@@ -101,8 +106,8 @@
 				AF2F9DB51E4BA66500B59EDE /* Logger.hpp */,
 				AF2F9DC01E4CAEB800B59EDE /* Kernel.cpp */,
 				AF2F9DC11E4CAEB800B59EDE /* Kernel.hpp */,
-				AF2F9DCC1E4CDC6700B59EDE /* Renderer.cpp */,
-				AF2F9DCD1E4CDC6700B59EDE /* Renderer.hpp */,
+				AF2F9DF31E5F13D000B59EDE /* Pipeline.cpp */,
+				AF2F9DF41E5F13D000B59EDE /* Pipeline.hpp */,
 			);
 			path = EngineOpenGL;
 			sourceTree = "<group>";
@@ -206,11 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF2F9DCE1E4CDC6700B59EDE /* Renderer.cpp in Sources */,
 				AF2F9DA11E4B7C0100B59EDE /* main.cpp in Sources */,
 				AF2F9DD51E4E0EC300B59EDE /* Shader.cpp in Sources */,
 				AF2F9DCB1E4CBBB100B59EDE /* Window.cpp in Sources */,
+				AF2F9DF51E5F13D000B59EDE /* Pipeline.cpp in Sources */,
 				AF2F9DC81E4CBB4200B59EDE /* WindowManager.cpp in Sources */,
+				AF2F9DF21E5DD45500B59EDE /* Renderer.cpp in Sources */,
 				AF2F9DC21E4CAEB800B59EDE /* Kernel.cpp in Sources */,
 				AF2F9DD21E4E0B3600B59EDE /* ShaderManager.cpp in Sources */,
 				AF2F9DB61E4BA66500B59EDE /* Logger.cpp in Sources */,

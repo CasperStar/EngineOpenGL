@@ -6,19 +6,11 @@
 #include <GL/glew.h>
 #include <vector>
 
-enum BufferType
-{
-    VERTEXBUFFER,
-    INDEXBUFFER
-};
-
 class Renderer
 {
 public:
     Renderer();
     ~Renderer();
-    
-    void CreateBuffer(BufferType arg_bufferType);
     
     ShaderManager* GetShaderManager();
     
